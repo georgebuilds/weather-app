@@ -33,6 +33,7 @@ export default function Home(weatherJson: { data: { main: {}; }; }) {
               alt="A powerful wizard who is knowledgeable about the weather"
             />
             <h1>Weather Wizard!</h1>
+            <p>Have you ever wanted to know the weather, but only for Miami, FL, and in units that don't make sense to you?</p>
             <p>Like a magical wizard, I have fetched the weather for you server-side, then delivered it to your browser. This has never been done before JavaScript.</p>
           </div>
           <article>
