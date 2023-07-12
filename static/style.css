@@ -10,13 +10,26 @@ body {
 main {
 	padding: 5px;
   text-align: center;
+  max-width: 100rem;
 }
 
 main a {
-
+  
     color: lightblue;
     text-decoration: none;
 
+}
+
+main .footer {
+  display: grid; 
+  grid-template-columns: 1fr  1fr;
+}
+main .footer a{
+  text-align: center;
+  padding: 10px;
+  color: lightblue;
+  text-decoration: none;
+  display:block;
 }
 
 .wizard-card {
