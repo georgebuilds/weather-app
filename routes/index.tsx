@@ -42,16 +42,22 @@ export default function Home(weatherJson: { data: { main: {}; }; }) {
         </div>
         <div className='footer'>
           <div className="tech-links">
-            <a href={'https://deno.land/'}>
-              <img src={'/deno.svg'} width='20' height='20' /> Deno {Deno.version.deno}
-            </a>
-            <a href={'https://www.typescriptlang.org/'}>
-              <img src={'/typescript.png'} width='20' height='20' /> TypeScript
-            </a>
+            <nobr>
+              <a href={'https://deno.land/'}>
+                <img src={'/deno.svg'} width='20' height='20' /> Deno {Deno.version.deno}
+              </a>
+            </nobr>
+            <nobr>
+              <a href={'https://www.typescriptlang.org/'}>
+                <img src={'/typescript.png'} width='20' height='20' /> TypeScript
+              </a>
+            </nobr>
           </div>
-          <a href='//github.com/georgebuilds/weather-app'>
-            <img src='/github-mark-white.svg' width='20' height='20' /> GitHub
-          </a>   
+          <div id='right-column'>
+            <a href='//github.com/georgebuilds/weather-app'>
+              <img src='/github-mark-white.svg' width='20' height='20' /> GitHub
+            </a>  
+          </div> 
         </div> 
       </main>
     </>

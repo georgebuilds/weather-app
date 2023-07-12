@@ -39,7 +39,8 @@ main .footer a{
   padding: 10px;
   color: lightblue;
   text-decoration: none;
-  display:block;
+  /* margin-bottom: 25px; */
+  display:inline-block;
 }
 
 .wizard-card {
@@ -75,7 +76,6 @@ main .wizard-card article .weather-info-items-list {
 
 main .wizard-card article .weather-info-items-list li {
   padding: 10px;
-	color: lightblue;
   border-radius: 10px;
   
 }
