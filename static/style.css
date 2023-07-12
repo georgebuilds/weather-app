@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Open+Sans&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans', sans-serif, sans;
+  padding: 15px;
+}
+
+main {
+	padding: 5px;
+  text-align: center;
+}
+
+main a {
+
+    color: lightblue;
+    text-decoration: none;
+
+}
+
+.wizard-card {
+  border-radius: 25px;
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0px 0px 10px 0px darkgrey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wizard-card h1 {
+  font-family: 'Cabin Sketch', serif;
+}
+
+
+main .wizard-card article .weather-info-items-list {
+	list-style: none;
+}
+
+main .wizard-card article .weather-info-items-list li {
+  padding: 10px;
+	color: lightblue;
+}
+
+main .wizard-card article .weather-info-items-list li:hover {
+	background-color: #666;
+  border-right: 5px solid lightblue;
+}

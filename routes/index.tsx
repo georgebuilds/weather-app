@@ -1,7 +1,6 @@
 import { Head } from "$fresh/runtime.ts"
 import WeatherBadge from "../islands/WeatherBadge.tsx"
 // import "npm:@picocss/pico/css/pico.min.css"
-// import "../styles/app.scss"
 
 import { Handlers } from "$fresh/server.ts"
 
@@ -16,27 +15,35 @@ export const handler: Handlers = {
   },
 };
 
-export default function Home(weatherJson) {
+export default function Home(weatherJson: { data: { main: {}; }; }) {
 
   return (
     <>
       <Head>
-        <title>Weather App!</title>
+        <title>Weather Wizard</title>
+        <link rel="stylesheet" href="/style.css" />
       </Head>
-      <div className="container">
-        <div>
-          <img
-            src="/logo.svg"
-            width="128"
-            height="128"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
+      <main>
+        <div className='wizard-card'>
+          <div>
+            <img
+              src="/weather-wizard.png"
+              width="128"
+              height="128"
+              alt="A powerful wizard who is knowledgeable about the weather"
+            />
+            <h1>Weather Wizard!</h1>
+            <p>Like a magical wizard, I have fetched the weather for you server-side, then delivered it to your browser. This has never been done before JavaScript.</p>
+          </div>
           <article>
-            <p>Weather App!</p>
+            
             <WeatherBadge weather={weatherJson} />
           </article>
         </div>
-      </div>
+        <a href='//github.com/georgebuilds/weather-app'>
+          <img src='/github-mark-white.svg' width='32' height='32' /> GitHub
+        </a>  
+      </main>
     </>
   );
 }
