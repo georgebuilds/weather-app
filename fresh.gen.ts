@@ -6,6 +6,7 @@ import * as $0 from "./routes/[zip].tsx";
 import * as $1 from "./routes/api/joke.ts";
 import * as $2 from "./routes/index.tsx";
 import * as $$0 from "./islands/WeatherBadge.tsx";
+import * as $$1 from "./islands/ZipInputField.tsx";
 
 const manifest = {
   routes: {
@@ -15,6 +16,7 @@ const manifest = {
   },
   islands: {
     "./islands/WeatherBadge.tsx": $$0,
+    "./islands/ZipInputField.tsx": $$1,
   },
   baseUrl: import.meta.url,
 };

@@ -77,7 +77,7 @@ main .wizard-card article .weather-info-items-list {
 main .wizard-card article .weather-info-items-list li {
   padding: 10px;
   border-radius: 10px;
-  
+  border-bottom: 1px solid lightblue;
 }
 
 main .wizard-card article .weather-info-items-list li:hover {
